@@ -1,5 +1,4 @@
 package com.rest;
-
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -12,7 +11,6 @@ import io.restassured.specification.ResponseSpecification;
 import io.restassured.specification.SpecificationQuerier;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.requestSpecification;
 import static org.hamcrest.MatcherAssert.assertThat;
