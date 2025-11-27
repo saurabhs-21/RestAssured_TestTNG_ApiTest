@@ -1,5 +1,4 @@
 package com.rest;
-
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -8,11 +7,9 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.ResponseSpecification;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
 
@@ -41,8 +38,6 @@ public class RequestPayLoadComplexJson {
                 expectContentType(ContentType.JSON).
                 log(LogDetail.ALL);
         customResponseSpecification = responseSpecBuilder.build();
-
-
     }
     @Test
     public void validate_post_request_payload_complex_json() {
@@ -99,7 +94,5 @@ public class RequestPayLoadComplexJson {
                 spec(customResponseSpecification).
                 assertThat().
                 body("msg",equalTo("Success"));
-
-
     }
 }
