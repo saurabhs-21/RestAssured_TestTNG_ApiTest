@@ -1,5 +1,4 @@
 package com.rest;
-
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -8,7 +7,6 @@ import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import static io.restassured.RestAssured.given;
 import static io.restassured.RestAssured.with;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -68,5 +66,4 @@ public class AutomateDelete {
 
         ;
     }
-
 }
