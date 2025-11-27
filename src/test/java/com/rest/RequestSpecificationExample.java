@@ -3,7 +3,6 @@ import static io.restassured.RestAssured.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.is;
-
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.filter.log.LogDetail;
 import io.restassured.response.Response;
@@ -57,7 +56,6 @@ public void beforeClass(){
 //                given(requestSpecification).
                 get("/workspaces").then().log().all().extract().response();
         assertThat(response.getStatusCode(), is(equalTo(200)));
-
     }
 @Test
     public  void  validate_response_body(){
