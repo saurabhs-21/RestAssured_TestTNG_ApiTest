@@ -1,5 +1,4 @@
 package com.rest;
-
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.builder.ResponseSpecBuilder;
@@ -9,11 +8,9 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.ResponseSpecification;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-
 import static io.restassured.RestAssured.config;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.equalTo;
@@ -44,7 +41,6 @@ public class RequestPayLoadAsJsonArray {
                 log(LogDetail.ALL);
         customResponseSpecification = responseSpecBuilder.build();
 
-
     }
     @Test
     public void validate_post_request_payload_json_array_as_list() {
@@ -70,7 +66,5 @@ public class RequestPayLoadAsJsonArray {
                 spec(customResponseSpecification).
                 assertThat().
                 body("msg",equalTo("Success"));
-
-
     }
 }
