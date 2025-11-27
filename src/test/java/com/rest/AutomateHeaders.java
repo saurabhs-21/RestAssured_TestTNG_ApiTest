@@ -1,12 +1,9 @@
 package com.rest;
-
 import io.restassured.http.Header;
 import io.restassured.http.Headers;
 import org.testng.annotations.Test;
-
 import java.util.HashMap;
 import java.util.List;
-
 import static io.restassured.RestAssured.*;
 
 public class AutomateHeaders {
